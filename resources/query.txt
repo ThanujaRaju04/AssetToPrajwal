@@ -1,0 +1,14 @@
+UserMaster:
+create table User_Master(userId number,userName varchar2(30),userPassword varchar2(30),userType varchar2(20));
+
+Department:
+create table Department(deptId number,deptName varchar2(20));
+
+Employee:
+create table Employee(empNo number,empName varchar2(20),job varchar2(20),mgr number,hireDate Date,deptId number);
+
+Asset:
+create table asset(assetId number,assetName varchar2(20),quantity number(4));
+
+AssetAllocation:
+create table assetallocation(allocationId number,assetId number,empNo number,status varchar2(30));
